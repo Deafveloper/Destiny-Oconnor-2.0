@@ -228,4 +228,34 @@ body {
     text-decoration: underline;
   }
 
+
+  .error-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 600px;
+    margin: auto;
+  }
   
+  .error-img {
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+  
+  .error-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-container p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+  }
+  
+  .error-container .btn {
+    padding: 0.8rem 1.6rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }

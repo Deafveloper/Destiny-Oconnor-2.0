@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Magic Misfire</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="error-container">
+    <img src="images/magic-explosion.png" alt="Magical mishap" class="error-img">
+    <h1>Whups.</h1>
+    <p id="error-tagline">This spell didn’t land.</p>
+    <a href="index.html" class="btn">Return to Destiny</a>
+  </div>
+
+  <script>
+    const taglines = [
+      "That spell didn’t land.",
+      "Uh-oh… wrong portal. Try another incantation?",
+      "Magic misfire — this page vanished into thin air.",
+      "404: My wand glitched. Blame the raccoon.",
+      "You've entered the Realm of Not Found. I’ll get the broom.",
+      "Well… that went left.",
+      "404. Even destiny can get lost sometimes."
+    ];
+
+    const tagline = taglines[Math.floor(Math.random() * taglines.length)];
+    document.getElementById('error-tagline').textContent = tagline;
+  </script>
+</body>
+</html>
