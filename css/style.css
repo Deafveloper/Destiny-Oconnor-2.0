@@ -107,3 +107,34 @@ body {
     border-radius: 4px;
     margin: 0.2rem;
   } 
+
+  .links-page {
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .link-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .link-list li {
+    margin: 1rem 0;
+  }
+  
+  .link-list a {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.2s ease;
+  }
+  
+  .link-list a:hover {
+    background: #2563eb;
+  }
