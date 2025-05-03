@@ -138,3 +138,50 @@ body {
   .link-list a:hover {
     background: #2563eb;
   }
+
+  .timeline {
+    max-width: 800px;
+    margin: auto;
+    padding: 3rem 2rem;
+  }
+  
+  .timeline-entry {
+    background: #1c1c1c;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+  }
+  
+  .timeline-entry h2 {
+    margin: 0 0 0.3rem;
+    font-size: 1.3rem;
+  }
+  
+  .timeline-date {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+  
+  .timeline-entry p {
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+  
+  .skills {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin: 0.2rem;
+  }
