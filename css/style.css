@@ -260,7 +260,7 @@ body {
     border-radius: 6px;
   }
 
-  /* ====== BLOG PAGE: xfiles.html ====== */
+/* ====== BLOG PAGE: xfiles.html ====== */
 
 body.xfiles-theme {
   background-color: #000;
@@ -283,6 +283,31 @@ body.xfiles-theme {
 .case-date {
   font-size: 0.9rem;
   color: #5affd7;
+}
+
+/* Make all links match the green theme and be visible on dark background */
+a {
+  color: #00ff9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #5affd7;
+  text-shadow: 0 0 8px #00ff9c;
+  text-decoration: underline;
+}
+
+/* Make case file h2's look clickable/like links */
+.case-entry h2 {
+  cursor: pointer;
+  color: #00ff9c;
+  transition: color 0.3s ease;
+}
+
+.case-entry h2:hover {
+  color: #5affd7;
+  text-shadow: 0 0 5px #00ff9c;
 }
 
 /* ====== LINKS PAGE: links.html (Matrix Theme) ====== */
@@ -327,4 +352,78 @@ body.matrix-theme {
 .matrix-links a:hover {
   background: #00ff00;
   color: #000;
+}
+
+/* ====== PROJECTS PAGE: projects.html (MIB Theme) ====== */
+
+body.mib-theme {
+  background-color: #000;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+}
+
+.project-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  filter: grayscale(100%) brightness(1.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.vault-header {
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-entry {
+  background: #0d0d0d;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #444;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+.project-entry:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.project-entry h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-entry p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.project-entry a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3b82f6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+.project-entry a:hover {
+  background-color: #2563eb;
 }
