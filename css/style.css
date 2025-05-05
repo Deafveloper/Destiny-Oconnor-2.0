@@ -286,6 +286,7 @@ body.xfiles-theme {
 }
 
 /* Make all links match the green theme and be visible on dark background */
+/* 
 a {
   color: #00ff9c;
   text-decoration: none;
@@ -293,6 +294,20 @@ a {
 }
 
 a:hover {
+  color: #5affd7;
+  text-shadow: 0 0 8px #00ff9c;
+  text-decoration: underline;
+}
+*/
+
+/* Green theme links only for .xfiles-theme */
+.xfiles-theme a {
+  color: #00ff9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.xfiles-theme a:hover {
   color: #5affd7;
   text-shadow: 0 0 8px #00ff9c;
   text-decoration: underline;
@@ -425,5 +440,22 @@ body.mib-theme {
 }
 
 .project-entry a:hover {
+  background-color: #2563eb;
+}
+
+/* ====== PROJECTS FOOTER LINK ====== */
+
+.mib-theme footer a {
+  color: #ffffff;
+  background-color: #3b82f6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.mib-theme footer a:hover {
   background-color: #2563eb;
 }
