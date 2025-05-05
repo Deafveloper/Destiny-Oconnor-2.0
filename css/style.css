@@ -35,6 +35,18 @@ body {
     text-decoration: none;
     border-radius: 4px;
   }
+
+  .about-gif {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-gif img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  }
   
   /* ====== ABOUT SECTION ====== */
   .about {
