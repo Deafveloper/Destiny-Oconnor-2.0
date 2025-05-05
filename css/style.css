@@ -1,5 +1,6 @@
 /* ====== GLOBAL STYLES ====== */
 body {
+    min-height: 150vh;;
     background-color: #0e0e0e;
     color: #f0f0f0;
     font-family: 'Fira Code', monospace;
@@ -412,4 +413,85 @@ body.mib-theme {
 
 .mib-theme footer a:hover {
   background-color: #2563eb;
+}
+
+/* ====== LINKS PAGE: Matrix Scroll-to-Reveal Terminal Style ====== */
+.terminal-links {
+  background: #000;
+  color: #00ff9c;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.terminal-links code {
+  display: block;
+  color: #00ff9c;
+  text-shadow: 0 0 8px #00ff9c;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.terminal-links a {
+  color: #00ff9c;
+  text-shadow: 0 0 8px #00ff9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terminal-links a:hover {
+  color: #5affd7;
+  text-shadow: 0 0 8px #00ff9c, 0 0 12px #39ff14, 0 0 20px #39ff14;
+  text-decoration: underline;
+  animation: pulseGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 4px #00ff9c, 0 0 6px #39ff14;
+  }
+  100% {
+    text-shadow: 0 0 12px #00ff9c, 0 0 20px #39ff14, 0 0 30px #5affd7;
+  }
+}
+
+#terminal {
+  white-space: pre-wrap;
+  font-size: 1.1rem;
+}
+
+#command {
+  font-weight: bold;
+  color: #00ff9c;
+  text-shadow: 0 0 8px #00ff9c;
+}
+
+/* ====== LINKS PAGE: Matrix Terminal ====== */
+
+.mac-header {
+  background: #2e2e2e;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.mac-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mac-header .dot.red {
+  background: #ff5f57;
+}
+
+.mac-header .dot.yellow {
+  background: #ffbd2e;
+}
+
+.mac-header .dot.green {
+  background: #28c840;
 }
