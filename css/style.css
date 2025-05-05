@@ -185,49 +185,6 @@ body {
   }
 
 
-  /* ====== BLOG PAGE: blog.html ====== */
-  .blog-list {
-    max-width: 800px;
-    margin: auto;
-    padding: 3rem 2rem;
-  }
-  
-  .blog-post {
-    background: #1c1c1c;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-left: 4px solid #22c55e;
-    border-radius: 6px;
-  }
-  
-  .blog-post h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-  }
-  
-  .blog-date {
-    display: block;
-    font-size: 0.9rem;
-    color: #9ca3af;
-    margin-bottom: 0.8rem;
-  }
-  
-  .blog-post p {
-    font-size: 1rem;
-    opacity: 0.85;
-    margin-bottom: 0.5rem;
-  }
-  
-  .blog-post a {
-    color: #3b82f6;
-    text-decoration: none;
-  }
-  
-  .blog-post a:hover {
-    text-decoration: underline;
-  }
-
-
   /* ====== 404 ERROR PAGE ====== */
   .error-container {
     text-align: center;
@@ -284,21 +241,6 @@ body.xfiles-theme {
   font-size: 0.9rem;
   color: #5affd7;
 }
-
-/* Make all links match the green theme and be visible on dark background */
-/* 
-a {
-  color: #00ff9c;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #5affd7;
-  text-shadow: 0 0 8px #00ff9c;
-  text-decoration: underline;
-}
-*/
 
 /* Green theme links only for .xfiles-theme */
 .xfiles-theme a {
