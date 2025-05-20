@@ -87,11 +87,13 @@ body {
     transform: scale(1.03);
   }
   
-  .project-card img {
+.project-card img {
+    /* Style for project images only */
     width: 100%;
     height: auto;
     border-radius: 4px;
   }
+
   
   .project-card h2 {
     margin-top: 1rem;
@@ -317,6 +319,33 @@ body.matrix-theme {
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.2s ease;
+}
+
+
+/* ====== MATRIX PAGE PILLS: Red and Blue Pill Images ====== */
+/*
+img[src*="RedPill.png"],
+img[src*="BluePill.png"] {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+*/
+
+.matrix-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.matrix-pills img {
+  width: 300px;
+  height: auto;
 }
 
 .matrix-links a:hover {
