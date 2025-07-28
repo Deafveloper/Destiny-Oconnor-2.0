@@ -344,13 +344,15 @@ img[src*="BluePill.png"] {
 }
 
 .matrix-pills img {
-  width: 300px;
+  width: 100px;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.matrix-links a:hover {
-  background: #00ff00;
-  color: #000;
+.matrix-pills img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ff00, 0 0 20px #39ff14;
 }
 
 /* ====== PROJECTS PAGE: projects.html (MIB Theme) ====== */
@@ -474,6 +476,20 @@ body.mib-theme {
   text-shadow: 0 0 8px #00ff9c, 0 0 12px #39ff14, 0 0 20px #39ff14;
   text-decoration: underline;
   animation: pulseGlow 1s ease-in-out infinite alternate;
+}
+
+.terminal-links .matrix-pills img {
+  width: 100px;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-links .matrix-pills img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ff00, 0 0 20px #39ff14;
 }
 
 @keyframes pulseGlow {

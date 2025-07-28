@@ -4,9 +4,9 @@ const links = [
     '> Loading Instagram...',
     '📸 https://instagram.com/deafveloper',
     '> Accessing TikTok...',
-    '🎵 https://tiktok.com/@deafveloper',
+    '🎵 https://www.tiktok.com/@deafveloper',
     '> Accessing Threads...',
-    '🧵 https://www.threads.com/@deafveloper'
+    '🧵 https://www.threads.net/@deafveloper'
   ];
 let index = 0;
 const output = document.getElementById('output');
@@ -30,7 +30,7 @@ function typeNextLine() {
 
     output.appendChild(line);
     index++;
-    setTimeout(typeNextLine, 1000); // delay between lines
+    setTimeout(typeNextLine, 700); // delay between lines
   } else {
     const pills = document.getElementById('pills-container');
     if (pills) {
