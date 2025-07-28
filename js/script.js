@@ -6,7 +6,10 @@ const links = [
     '> Accessing TikTok...',
     '🎵 https://www.tiktok.com/@deafveloper',
     '> Accessing Threads...',
-    '🧵 https://www.threads.net/@deafveloper'
+    '🧵 https://www.threads.net/@deafveloper',
+    '> Choose your path:',
+    '> [R] Red Pill - Return to HQ',
+    '> [B] Blue Pill - Dive deeper into the Matrix...'
   ];
 let index = 0;
 const output = document.getElementById('output');
@@ -25,7 +28,21 @@ function typeNextLine() {
       link.rel = 'noopener noreferrer';
       line.appendChild(link);
     } else {
-      line.textContent = text;
+      if (text === '[R] Red Pill - Return to HQ') {
+        const link = document.createElement('a');
+        link.href = 'index.html';
+        link.textContent = text;
+        link.className = 'pill-link';
+        line.appendChild(link);
+      } else if (text === '[B] Blue Pill - Dive deeper into the Matrix...') {
+        const link = document.createElement('a');
+        link.href = 'xfiles.html';
+        link.textContent = text;
+        link.className = 'pill-link';
+        line.appendChild(link);
+      } else {
+        line.textContent = text;
+      }
     }
 
     output.appendChild(line);
@@ -36,13 +53,18 @@ function typeNextLine() {
     if (pills) {
       pills.style.display = 'flex';
     }
+
+    document.addEventListener('keydown', (event) => {
+      const key = event.key.toUpperCase();
+      if (key === 'R') {
+        window.location.href = 'index.html';
+      } else if (key === 'B') {
+        window.location.href = 'xfiles.html';
+      }
+    });
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('scroll', () => {
-    if (output.childElementCount === 0) {
-      typeNextLine();
-    }
-  });
+  typeNextLine();
 });

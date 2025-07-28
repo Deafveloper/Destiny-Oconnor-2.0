@@ -311,28 +311,19 @@ body.matrix-theme {
 }
 
 .matrix-links a {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: transparent;
   color: #00ff00;
-  border: 1px solid #00ff00;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.2s ease;
+  font-weight: bold;
+}
+
+.matrix-links a:hover {
+  color: #5affd7;
+  text-shadow: 0 0 8px #00ff9c;
+  text-decoration: underline;
 }
 
 
-/* ====== MATRIX PAGE PILLS: Red and Blue Pill Images ====== */
-/*
-img[src*="RedPill.png"],
-img[src*="BluePill.png"] {
-  width: 100px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-}
-*/
+/* ====== MATRIX PAGE PILLS: Section removed (no pill images) ====== */
 
 .matrix-pills {
   display: flex;
@@ -341,18 +332,6 @@ img[src*="BluePill.png"] {
   gap: 2rem;
   margin: 2rem 0;
   flex-wrap: wrap;
-}
-
-.matrix-pills img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.matrix-pills img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #00ff00, 0 0 20px #39ff14;
 }
 
 /* ====== PROJECTS PAGE: projects.html (MIB Theme) ====== */
@@ -461,45 +440,16 @@ body.mib-theme {
   text-shadow: 0 0 8px #00ff9c;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .terminal-links a {
   color: #00ff9c;
-  text-shadow: 0 0 8px #00ff9c;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.terminal-links a:hover {
-  color: #5affd7;
-  text-shadow: 0 0 8px #00ff9c, 0 0 12px #39ff14, 0 0 20px #39ff14;
-  text-decoration: underline;
-  animation: pulseGlow 1s ease-in-out infinite alternate;
-}
+/* Interactive Matrix Pills: pill images removed, so rule deleted */
 
-.terminal-links .matrix-pills img {
-  width: 100px;
-  height: auto;
-  margin: 2rem auto;
-  display: block;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.terminal-links .matrix-pills img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #00ff00, 0 0 20px #39ff14;
-}
-
-@keyframes pulseGlow {
-  0% {
-    text-shadow: 0 0 4px #00ff9c, 0 0 6px #39ff14;
-  }
-  100% {
-    text-shadow: 0 0 12px #00ff9c, 0 0 20px #39ff14, 0 0 30px #5affd7;
-  }
-}
 
 #terminal {
   white-space: pre-wrap;
@@ -539,4 +489,8 @@ body.mib-theme {
 
 .mac-header .dot.green {
   background: #28c840;
+}
+
+.terminal-links .matrix-pills {
+  /* Removed justify-content: space-around and margin-top as pill images no longer exist */
 }
